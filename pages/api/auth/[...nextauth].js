@@ -12,6 +12,9 @@ export default NextAuth({
         'https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/youtube.readonly',
     }),
   ],
+  jwt: {
+    encryption: true,
+  },
   secret: process.env.SECRET,
   callbacks: {
     async jwt(token, user, account, profile, isNewUser) {

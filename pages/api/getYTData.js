@@ -26,7 +26,7 @@ const getYTData = async (pageToken = '') => {
 
 export default async (req, res) => {
   const session = await getSession({ req });
-  const token = await getToken({ req, secret });
+  const token = await getToken({ req, secret, encryption: true });
 
   accessToken = token.accessToken;
 

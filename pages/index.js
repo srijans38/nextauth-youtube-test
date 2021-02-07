@@ -11,7 +11,7 @@ export default function Home() {
   useEffect(async () => {
     console.log('test');
     if (loading) {
-      const { data } = await axios.get('/api/hello', {
+      const { data } = await axios.get('/api/getYTData', {
         withCredentials: true,
       });
       console.log(data);
