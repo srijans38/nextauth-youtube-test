@@ -50,7 +50,7 @@ export default function Home() {
             onClick={() => setLoading(!loading)}
             disabled={loading || subsList.length}
           >
-            Get My YouTube Subsciptions
+            Get My YouTube Subscriptions
           </button>
           {loading && <p>Loading...</p>}
           <ul>
